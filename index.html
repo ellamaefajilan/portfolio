@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="image/logo.png" type="logo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ella Mae Fajilan - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+            <a href="#home"><img src="image/logo.png" alt="Logo" class="logo"></a>
+            <span class="logo-text">Portfolio</span>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul id="nav-menu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li>
+                <label class="theme-switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </span>
+                </label>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="container">
+            <h1>Hi, I'm Ella Mae Fajilan</h1>
+            <div class="typing-container">
+                <span class="typing-prefix">An aspiring </span>
+                <span class="typed-text"></span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="intro-text">
+                Passionate about creating innovative solutions through code and design. 
+                Constantly learning and growing in the world of technology.
+            </p>
+            <div class="button-container">
+                <a href="#contact" class="btn">
+                    <i class="fas fa-envelope"></i>
+                    Get In Touch
+                </a>
+                <a href="files/Ella_Mae_Fajilan_CV.pdf" download class="btn btn-secondary">
+                    <i class="fas fa-download"></i>
+                    Download CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Frontend Development</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Backend Development</h3>
+                    <ul>
+                        <li>PHP</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Mobile Development</h3>
+                    <ul>
+                        <li>Android Studio</li>
+                        <li>Java</li>
+                        <li>XML Layout Design</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>UI/UX Design</h3>
+                    <ul>
+                        <li>Figma</li>
+                        <li>Canva</li>
+                        <li>Adobe XD + Photoshop</li>
+                        <li>Draw.io</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Machine Learning</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Google Colab</li>
+                        <li>Roboflow</li>
+                        <li>Data Labeling Tools</li>
+                        <li>OpenCV</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools & Technologies</h3>
+                    <ul>
+                        <li>Git / GitHub</li>
+                        <li>XAMPP</li>
+                        <li>VS Code / Android Studio</li>
+                        <li>Google Cloud Platform</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Problem Solving</li>
+                        <li>Team Collaboration</li>
+                        <li>Leadership</li>
+                        <li>Time Management</li>
+                        <li>Adaptability</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card video-card" id="videoCardBtn">
+                    <div class="project-image video-thumbnail">
+                        <video autoplay muted loop playsinline>
+                            <source src="videos/pawtessierie.mp4" type="video/mp4">
+                        </video>
+                        <div class="play-overlay">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Pawtessierie</h3>
+                        <p>Click to watch the video presentation of this project.</p>
+                    </div>
+                </div>
+                <div class="project-card video-card" id="videoCardBtn2">
+                    <div class="project-image video-thumbnail">
+                        <video autoplay muted loop playsinline>
+                            <source src="videos/fryscales.mp4" type="video/mp4">
+                        </video>
+                        <div class="play-overlay">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>FryScales</h3>
+                        <p>Click to watch the video presentation of this project.</p>
+                    </div>
+                </div>
+                <div class="project-card video-card" id="videoCardBtn3">
+                    <div class="project-image video-thumbnail">
+                        <video autoplay muted loop playsinline>
+                            <source src="videos/imovie.mp4" type="video/mp4">
+                        </video>
+                        <div class="play-overlay">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Imovie</h3>
+                        <p>Click to watch the video presentation of this project.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="your.email@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Your message here..." required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <div class="g-recaptcha" data-sitekey="6Lf9cA4sAAAAAF833QTl3yX6sdokNaXbkn1lfCVs"></div>
+                </div>
+                
+                <button class="btn" id="submitBtn">Send Message</button>
+                <div class="status-message" id="statusMessage"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Ella Mae Fajilan</h3>
+                <p>Aspiring Mobile & Web Developer passionate about creating innovative solutions through code and design.</p>
+                <i class="bi bi-telephone-fill"></i> +63 969 150 1497<br>
+                <i class="bi bi-envelope-fill"></i> ellamaefajilan@gmail.com
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Connect</h3>    
+                <div class="social-icons">
+                    <a href="https://github.com/ellafajilan" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/ella-fajilan-80a59a296" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/ellie.xo16" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com/yeuxella_" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Ella Mae Fajilan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="videoModal" class="video-modal">
+        <div class="video-modal-content">
+            <span class="video-close" id="videoCloseBtn">&times;</span>
+            <video id="modalVideo" controls>
+                <source src="videos/pawtessierie.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div id="videoModal2" class="video-modal">
+        <div class="video-modal-content">
+            <span class="video-close" id="videoCloseBtn2">&times;</span>
+            <video id="modalVideo2" controls>
+                <source src="videos/fryscales.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div id="videoModal3" class="video-modal">
+        <div class="video-modal-content">
+            <span class="video-close" id="videoCloseBtn3">&times;</span>
+            <video id="modalVideo3" controls>
+                <source src="videos/imovie.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
